@@ -1,24 +1,22 @@
-# Flexy
+# Vedxo
 
-Flexy is a modern theme for [Hexo](https://hexo.io/), written using [Flexbox](https://philipwalton.github.io/solved-by-flexbox/).
+Vedxo is an ultra-minimalist theme for [Hexo](https://hexo.io), built to be the fastest and most readable dev-blog on the planet.
 
-![Flexy Screenshot](source/images/screenshot.png)
-
-![Flexy Mobile Screenshot](source/images/screenshot_mobile.png)
+It has it's origins from [sjaakvandenberg](https://github.com/sjaakvandenberg) and is built using [Flexbox](https://philipwalton.github.io/solved-by-flexbox/).
 
 ## Demo
 
-You can see the theme in action on my [website](https://svdb.co/).
+You can see the theme in action on my [website](https://vpetkar.github.io/).
 
 ## Usage
 
 ```
-$ git clone https://github.com/sjaakvandenberg/flexy themes/flexy
+$ git clone https://github.com/vpetkar/vedxo themes/vedxo
 $ npm un -S hexo-renderer-ejs
 $ npm i -S hexo-renderer-jade
 ```
 
-Change your `theme` variable to `flexy` in your root's `_config.yml`.
+Change your `theme` variable to `vedxo` in your root's `_config.yml`.
 
 ## Features
 
@@ -53,7 +51,8 @@ In your root's `_config.yml`, set `filename_case` to `1`. Create a new `Articles
 
 ## Fonts
 
-This theme uses Open Sans for headings, Droid Serif for body text and Fira Mono for code. They're located in the `source/fonts` directory in `WOFF` and `WOFF2` formats.
+This theme uses Roboto for headings, and Inconsolata for code. These are served through Google's CDN, in WOFF2 formats.
+Due to the highly subjective nature of font readability, I'm always open to suggestions and improvements to the font-base.
 
 ## Problems or Improvements
 
