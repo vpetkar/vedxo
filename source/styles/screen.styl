@@ -25,6 +25,7 @@
 @import 'normalize.css'
 @import 'nib'
 @import '_*'
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,900'
 
 // 0.1 Webfonts
 
@@ -33,6 +34,7 @@ $font-directory = '../fonts/'
 webfont('Inconsolata', 'inconsolata/400', 400, normal)
 webfont('Inconsolata', 'inconsolata/700', 700, normal)
 
+/*
 webfont('Droid Serif', 'droidserif/400', 400, normal)
 webfont('Droid Serif', 'droidserif/700', 700, normal)
 webfont('Droid Serif', 'droidserif/400i', 400, italic)
@@ -52,18 +54,20 @@ webfont('Open Sans', 'opensans/800i', 800, italic)
 webfont('Fira Mono', 'fira/400', 400, normal)
 webfont('Fira Mono', 'fira/500', 500, normal)
 webfont('Fira Mono', 'fira/700', 700, normal)
+*/
 
 // 0.2 Typography
 
-$title-font   = 'Open Sans', sans-serif
-$heading-font = 'Open Sans', sans-serif
-$button-font  = 'Open Sans', sans-serif
-$small-font   = 'Droid Serif', Georgia, serif
-$body-font    = 'Droid Serif', Georgia, serif
-$code-font    = 'Inconsolata', monospace, sans-serif
+$title-font   = 'Roboto', sans-serif
+$heading-font = 'Roboto', sans-serif
+$button-font  = 'Roboto', sans-serif
+$meta-font    = 'Roboto', sans-serif
+$small-font   = 'Roboto', sans-serif
+$body-font    = 'Roboto', sans-serif
+$code-font    = 'Inconsolata', monospace, serif
 
 $title-weight   = 400
-$heading-weight = 700
+$heading-weight = 400
 $small-weight   = 400
 $body-weight    = 400
 $code-weight    = 400
@@ -98,7 +102,7 @@ $darker-blue   = darken($blue, 80%)
 
 // 0.4 Defaults
 
-$author = 'Sjaak van den Berg'
+$author = 'Ved Petkar'
 
 $title-color             = $blue
 $description-color       = $white
@@ -609,23 +613,22 @@ h6
   font-weight $heading-weight
   line-height 1
   margin-top 0
-  margin-bottom 20px
+  margin-bottom 0pxf
   text-rendering optimizeLegibility
 
 h1
   font-size 4.5rem
   letter-spacing -2px
-  line-height 1.2em
+  line-height 2em
   text-indent -3px
 
 h2
-  font-size 3.9rem
-  letter-spacing -1px
-  line-height 1.2em
-  text-indent -2px
+  font-size 3rem
+  line-height 1.5em
 
 h3
-  font-size 3.3rem
+  line-height 4rem
+  font-size 2rem
 
 h4
   font-size 2.8rem
@@ -715,7 +718,7 @@ pre
   border-radius .3em
   color $white
   font-family $code-font
-  font-size .9em
+  font-size 1.5rem
   font-weight $code-weight
   margin 1.6em 0
   overflow auto
