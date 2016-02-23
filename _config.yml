@@ -1,10 +1,9 @@
 # config
-logo: /images/svdb.png
-keywords: "sjaak van den berg, svdb, bitcoin, crypto, payment, integration, bitcoins, wordpress, betaling, webshop, front end, design, ontwerp, developer"
+logo:
+keywords: "ved petkar, development, angular, ved, petkar, startups, san francisco, javascript, android, mobile, ios, swift, java"
 pubkey: 13DB CAA1 2633 81A7
 menu:
-  Home: /
-  Articles: /articles
+  Topics: /tags
   About: /about
 
 # Content
@@ -12,4 +11,4 @@ excerpt_link: Read more
 
 # Miscellaneous
 rss: /atom.xml
-google_analytics:
+google_analytics: UA-51865808-3
