@@ -4,6 +4,7 @@ if theme.logo
 h1
   a(href= config.root, alt= config.title, title= config.title, itemprop='headline')= config.title
 p(itemprop='description')!= config.description
+p.author-tagline(itemprop='author') Written with love by #{span = config.author}
 nav(itemscope, itemtype='https://schema.org/SiteNavigationElement')
   ul
     each url, label in theme.menu
