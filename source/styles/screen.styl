@@ -94,6 +94,7 @@ $black         = hsla(0, 0, 8%, 1)
 $light-gray    = lighten($gray, 95%)
 $shade-gray    = lighten($gray, 35%)
 $dark-gray     = darken($gray, 35%)
+$darker-gray   = darken($gray, 40%)
 
 $light-blue    = lighten($blue, 25%)
 $shade-blue    = darken($blue, 25%)
@@ -104,9 +105,9 @@ $darker-blue   = darken($blue, 80%)
 
 $author = 'Ved Petkar'
 
-$title-color             = $blue
-$description-color       = $white
-$header-link-color       = $blue
+$title-color             = $dark-grey
+$description-color       = $darker-grey
+$header-link-color       = $dark-grey
 $link-hover-header-color = $blue
 
 $body-color            = $black
@@ -164,7 +165,7 @@ main
 // ===========================================================================
 
 header
-  background-image linear-gradient(8deg, hsl(220, 100%, 12%), hsl(220, 40%, 4%) 50%)
+  background-color #EFEBEB
   flex 1
   overflow hidden
   position relative
@@ -190,7 +191,6 @@ header
     font-size 4.5rem
     font-weight $title-weight
     letter-spacing -1px
-    text-shadow 0 1px 6px hsla(0, 0, 0, .5)
     a:hover
       text-decoration none
   // Logo
@@ -207,7 +207,6 @@ header
     font-weight $body-weight
     letter-spacing 0
     margin 0
-    text-shadow 0 1px 3px hsla(0, 0, 0, .35)
   // Navigation list
   nav ul
     list-style none
@@ -222,7 +221,9 @@ header
       &:last-child
         &:after
           content ''
-  .space
+  p.author-tagline
+    padding-top 2.5rem
+  /*.space
     animation slide 8s linear infinite
     background-image url('../images/stars.svg')
     background-position center center
@@ -233,8 +234,6 @@ header
     top 0
     width 400%
     z-index 1
-  p.author-tagline
-    padding-top 2.5rem
 
 // Header animation
 @keyframes slide
@@ -242,7 +241,7 @@ header
     transform translate3d(0, 0, 0)
   100%
     transform translate3d(-240px, -240px, 0)
-
+*/
 // ===========================================================================
 // 3. Main
 // ===========================================================================
@@ -846,6 +845,7 @@ figure.highlight
   body
     header
       padding-top 5rem
+      max-width: none!important
 @media (min-width 720px)
 
   body
@@ -855,8 +855,9 @@ figure.highlight
     header
       flex 1
       overflow hidden
-      text-align right
+      text-align left
       padding 40px
+      max-width:200px
 
       img
         margin 0 -32px 0 0

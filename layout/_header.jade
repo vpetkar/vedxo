@@ -4,9 +4,11 @@ if theme.logo
 h1
   a(href= config.root, alt= config.title, title= config.title, itemprop='headline')= config.title
 p(itemprop='description')!= config.description
-p.author-tagline(itemprop='author') Written with ♥ #{span = config.author}
-nav(itemscope, itemtype='https://schema.org/SiteNavigationElement')
-  ul
-    each url, label in theme.menu
-      li(itemprop='name')
-        a(href= url, alt= label, title= label, itemprop='url')= label
+a.author-tagline(href="mailto: #{config.email}") Ask me anything
+p.author-tagline(itemprop='author') Written with ♥ by #{span = config.author}
+p.blog-license(itemprop='license') #{span = config.license}
+//- nav(itemscope, itemtype='https://schema.org/SiteNavigationElement')
+//-   ul
+//-     each url, label in theme.menu
+//-       li(itemprop='name')
+//-         a(href= url, alt= label, title= label, itemprop='url')= label

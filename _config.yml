@@ -2,9 +2,10 @@
 logo:
 keywords: "ved petkar, development, angular, ved, petkar, startups, san francisco, javascript, android, mobile, ios, swift, java"
 pubemail: hello@vedpetkar.com
+
 menu:
-  Topics: /tags
-  About: /about
+#   Topics: /tags
+#   About: /about
 
 # Content
 excerpt_link: Read more

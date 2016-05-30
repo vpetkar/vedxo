@@ -10,6 +10,7 @@ meta(name='keywords', content= theme.keywords)
 meta(name='HandheldFriendly', content='True')
 meta(name='MobileOptimized', content='320')
 meta(name='viewport', content='width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=0')
+meta(name='google-site-verification' content=config.google_site_verify)
 
 link(rel='stylesheet', type='text/css', href= config.root + 'styles/screen.css')
 
@@ -31,6 +32,13 @@ link(rel='icon', type='image/png', sizes='192x192', href='/images/favicon-192x19
 
 meta(name='msapplication-TileColor', content='#121315')
 meta(name='msapplication-TileImage', content='/images/mstile-144x144.png')
+
+// Meta tags for posts
+
+if is_post()
+  meta(name='description')=page.post_meta_description
+  meta(name='keywords')=page.post_meta_tags
+  
 
 if config.rss
   link(rel='alternate', type='application/rss+xml', title='RSS', href= config.rss)
